@@ -18,6 +18,7 @@
     <properties>
         <lombok.version>1.18.30</lombok.version>
         <springDoc.version>2.2.0</springDoc.version>
+        <springBoot.validation.version>3.2.0</springBoot.validation.version>
     </properties>
 
     <dependencyManagement>
@@ -32,6 +33,11 @@
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
                 <version>${springDoc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+                <version>${springBoot.validation.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
